@@ -28,7 +28,7 @@ minuut = datumtijd.minute
 uur = datumtijd.hour
 print(str(uur) + ":" + str(minuut))
 # Opdracht 6
-	from datetime import datetime
+from datetime import datetime
 datumtijd = datetime.now()
 minuut = datumtijd.minute
 uur = datumtijd.hour
