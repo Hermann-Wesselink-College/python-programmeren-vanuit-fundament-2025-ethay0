@@ -1,0 +1,24 @@
+SpelerA = input("Naam speler A: ")
+SpelerB = input("Naam speler B: ")
+
+puntenA = 0
+puntenB = 0
+
+print("Welkom " + SpelerA + " en " + SpelerB + " bij Steen, Papier, Schaar!")
+
+while puntenA < 3 and puntenB < 3:
+    rondeWinnaar = input("Wie heeft de ronde gewonnen? Speler A of Speler B?: ")
+    if rondeWinnaar == "Speler A":
+        puntenA += 1
+        print(SpelerA + " heeft nu " + str(puntenA) + " punten.")
+    elif rondeWinnaar == "Speler B":
+        puntenB += 1
+        print(SpelerB + " heeft nu " + str(puntenB) + " punten.")
+    else:
+        print("Ongeldige invoer, probeer het opnieuw.")
+
+if puntenA or puntenB == 3:
+    if puntenA > puntenB:
+        print(SpelerA + " heeft gewonnen met een score van " + str(puntenA) + " tegen " + str(puntenB) + "!")
+    else:
+        print(SpelerB + " heeft gewonnen met een score van " + str(puntenB) + " tegen " + str(puntenA) + "!")
